@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.mycompany</groupId>
+    <artifactId>Tutorial</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <exec.mainClass>tutorial.Main.Tutorial</exec.mainClass>
+    </properties>
+    <repositories>
+        <repository>
+            <id>objectdb</id>
+            <name>ObjectDB Repository</name>
+            <url>https://m2.objectdb.com</url>
+        </repository>
+    </repositories>
+     <!-- Add dependencies section here -->
+    <dependencies>
+        <!-- ObjectDB Dependency -->
+        <dependency>
+            <groupId>com.objectdb</groupId>
+            <artifactId>objectdb</artifactId>
+            <version>2.9.0</version> <!-- Update the version if needed -->
+        </dependency>
+        <dependency>
+        <groupId>javax.persistence</groupId>
+        <artifactId>javax.persistence-api</artifactId>
+        <version>2.2</version> <!-- Replace with the required version, typically 2.2 or later -->
+        <scope>provided</scope> <!-- You can use provided scope if the server supplies the JPA implementation -->
+        </dependency>
+    </dependencies>
+    
+    
+</project>
